@@ -12,11 +12,18 @@ package SingletonP;
 public class OsobaSingleton 
 {
     private static OsobaSingleton instance;
+    private String imie = "";
+    private String nazwisko = "";
+    private String pesel = "";
+    
  public static OsobaSingleton instance()
  {
      if(instance==null)
      {
          instance = new OsobaSingleton();
+         instance.imie = "SingletonImieDefault";
+         instance.nazwisko = "SingletonNazwiskoDefault";
+         instance.pesel = "SingletonPeselDefault";
      }
      return instance;
  }     
