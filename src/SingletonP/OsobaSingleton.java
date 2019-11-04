@@ -16,7 +16,9 @@ public class OsobaSingleton
     private String nazwisko = "";
     private String pesel = "";
     
- public static OsobaSingleton instance()
+ private OsobaSingleton(){}
+ 
+ public static OsobaSingleton getInstance()
  {
      if(instance==null)
      {
